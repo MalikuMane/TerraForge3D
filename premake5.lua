@@ -241,7 +241,8 @@ project "TerraForge3D"
 			"MuParser",
 			"Assimp",
 			"dl",
-			"pthread"
+			"pthread",
+			"stdc++fs"
 		}
 
 	filter "configurations:Debug"

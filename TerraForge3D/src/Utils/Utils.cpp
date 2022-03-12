@@ -147,7 +147,7 @@ bool DeleteFileT(std::string path)
 {
 	try
 	{
-		if (std::filesystem::remove(path))
+		if (std::experimental::filesystem::remove(path))
 		{
 			std::cout << "File " << path << " deleted.\n";
 		}
@@ -159,7 +159,7 @@ bool DeleteFileT(std::string path)
 		}
 	}
 
-	catch(const std::filesystem::filesystem_error &err)
+	catch(const std::experimental::filesystem::filesystem_error &err)
 	{
 		std::cout << "filesystem error: " << err.what() << '\n';
 		return false;
